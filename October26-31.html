@@ -1,0 +1,234 @@
+<html>
+<head>
+ <title>Weather Today</title>
+<link rel="stylesheet" href="style.css">
+<style type="text/css">
+
+
+</style>
+<script defer src="app.js"></script>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+      <script type="text/javascript">
+        google.charts.load('current', {'packages':['corechart']});
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+          var data = google.visualization.arrayToDataTable([
+            ['data', 'Temperatura Min', 'Temperatura Max'],
+            ['E Shtunë',  17,      25],
+            ['E Djelë',  15,      25],
+            ['E Hënë',  12,       24],
+            ['E Martë',  7,      23],
+            ['E Mërkurë',  7,     24]
+            
+          ]);
+
+          var options = {
+            legend: { position: 'bottom' }
+          };
+
+          var chart = new google.visualization.LineChart(document.getElementById('curve_chart1'));
+
+          chart.draw(data, options);
+        }
+      </script>
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+      <script type="text/javascript">
+        google.charts.load('current', {'packages':['corechart']});
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+          var data = google.visualization.arrayToDataTable([
+            ['data', 'Temperatura Min', 'Temperatura Max'],
+            ['E Enjte',  8,     23],
+            ['E Premte',  8,     28],
+            ['E Shtunë',  10,     27],
+            ['E Djelë',  9,     24],
+            ['E Hënë',  12,     23] 
+          ]);
+
+          var options = {
+            legend: { position: 'bottom' }
+          };
+
+          var chart = new google.visualization.LineChart(document.getElementById('curve_chart2'));
+
+          chart.draw(data, options);
+        }
+      </script>
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+  google.charts.load('current', {'packages':['corechart']});
+  google.charts.setOnLoadCallback(drawChart);
+
+  function drawChart() {
+    var data = google.visualization.arrayToDataTable([
+      ['data', 'Temperatura Min', 'Temperatura Max'],
+      ['E Martë',  16,     19],
+      ['E Mërkurë',  16,     21],
+      ['E Enjte',  16,     22],
+      ['E Premte',  13,     22],
+      ['E Shtunë',  10,     23]
+    ]);
+
+    var options = {
+      legend: { position: 'bottom' }
+    };
+
+    var chart = new google.visualization.LineChart(document.getElementById('curve_chart3'));
+
+    chart.draw(data, options);
+  }
+</script>
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+      <script type="text/javascript">
+        google.charts.load('current', {'packages':['corechart']});
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+          var data = google.visualization.arrayToDataTable([
+            ['data', 'Temperatura Min', 'Temperatura Max'],
+            ['E Djelë',  9,     25],
+            ['E Hënë',  9,     25],
+            ['E Martë',  7,     25],
+            ['E Mërkurë',  9,     24],
+            ['E Enjte',  7,     27],
+          ]);
+
+          var options = {
+            legend: { position: 'bottom' }
+          };
+
+          var chart = new google.visualization.LineChart(document.getElementById('curve_chart4'));
+
+          chart.draw(data, options);
+        }
+      </script>
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+  google.charts.load('current', {'packages':['corechart']});
+  google.charts.setOnLoadCallback(drawChart);
+
+  function drawChart() {
+    var data = google.visualization.arrayToDataTable([
+      ['data', 'Temperatura Min', 'Temperatura Max'],
+      ['E Premte',  7,     26],
+      ['E Shtunë',  9,     25],
+      ['E Djelë',  11,     25],
+      ['E Hënë',  11,     30],
+      ['E Martë',  10,     25],
+    ]);
+
+    var options = {
+      legend: { position: 'bottom' }
+    };
+
+    var chart = new google.visualization.LineChart(document.getElementById('curve_chart5'));
+
+    chart.draw(data, options);
+  }
+</script>
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+      <script type="text/javascript">
+        google.charts.load('current', {'packages':['corechart']});
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+          var data = google.visualization.arrayToDataTable([
+            ['data', 'Temperatura Min', 'Temperatura Max'],
+            ['E Mërkurë',  10,     25],
+            ['E Enjte',  10,     28],
+            ['E Premte',  9,     27],
+            ['E Shtunë',  8,     26],
+            ['E Djelë',  8,     25],
+            ['E Hënë',  19,     28]
+          ]);
+
+          var options = {
+            legend: { position: 'bottom' }
+          };
+
+          var chart = new google.visualization.LineChart(document.getElementById('curve_chart6'));
+
+          chart.draw(data, options);
+        }
+      </script>
+
+</head>
+<body>
+<div class="menu">
+  <a href="Index.html" class="menu-item"><img src="House.png"></a>
+  <a href="October.html" class="menu-item">Tetor</a>
+  <a href="November.html" class="menu-item">Nëntor</a>
+  <a href="December.html" class="menu-item">Dhjetor</a>
+  <a href="January.html" class="menu-item">Janar</a>
+  <a href="February.html" class="menu-item">Shkurt</a>
+  <div class="search-new" id="search-container"> 
+    <input type="search" class="search-bar-new" placeholder="Search" value="" id="search" onchange="openPage()">
+    <button role="Search"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1.7em" width="1.7em" xmlns="http://www.w3.org/2000/svg"><path d="M909.6 854.5L649.9 594.8C690.2 542.7 712 479 712 412c0-80.2-31.3-155.4-87.9-212.1-56.6-56.7-132-87.9-212.1-87.9s-155.5 31.3-212.1 87.9C143.2 256.5 112 331.8 112 412c0 80.1 31.3 155.5 87.9 212.1C256.5 680.8 331.8 712 412 712c67 0 130.6-21.8 182.7-62l259.7 259.6a8.2 8.2 0 0 0 11.6 0l43.6-43.5a8.2 8.2 0 0 0 0-11.6zM570.4 570.4C528 612.7 471.8 636 412 636s-116-23.3-158.4-65.6C211.3 528 188 471.8 188 412s23.3-116.1 65.6-158.4C296 211.3 352.2 188 412 188s116.1 23.2 158.4 65.6S636 352.2 636 412s-23.3 116.1-65.6 158.4z"></path></svg></button>
+  </div> 
+  <script src="script.js"></script>
+</div>
+
+<div class="Main">
+  <h2>Dita 26 Deri në 31</h2>
+   <div id="curve_chart6" class="chart"></div>
+   <table>
+    <tbody>
+     <tr>
+      <td class="td6 hidden">
+        <div class="InformationHolder">
+          <h3>Dita 26</h3>
+          <h4>Dite me Diell<br> Era Drejt <br> Jug-Lindjes <br> Fryn me 40 km/h<br> Temp max: 25°C  <br> Temp Min: 10°C <br> Temp Mes:18°C </h4>
+        </div>
+      </td>
+
+    
+      <td class="td6 hidden">
+       <div class="InformationHolder">
+         <h3>Dita 27</h3>
+         <h4>Dite me Re <br> Era Drejt <br> Jug-Perendimit <br> Fryn me 45 km/h<br> Temp max: 28°C  <br> Temp Min: 10°C <br> Temp Mes:19°C </h4>
+       </div>
+      </td>
+      
+      <td class="td6 hidden">
+        <div class="InformationHolder">
+          <h3>Dita 28</h3>
+          <h4>Dite me Re <br> Era Drejt <br> Jug-Lindjes <br> Fryn me 40 km/h<br> Temp max: 27°C  <br> Temp Min: 9°C <br> Temp Mes:18°C </h4>
+        </div>
+      </td>
+        
+      <td class="td6 hidden">
+        <div class="InformationHolder">
+          <h3>Dita 29</h3>
+          <h4>Dite me Re <br> Era Drejt <br> Jug-Lindjes <br> Fryn me 35 km/h<br> Temp max: 26°C  <br> Temp Min: 8°C <br> Temp Mes:17°C </h4>
+        </div>
+      </td>
+          
+      <td class="td6 hidden">
+        <div class="InformationHolder">
+          <h3>Dita 30</h3>
+          <h4>Dite me Re <br> Era Drejt <br> Jugut <br> Fryn me 35 km/h<br> Temp max: 25°C  <br> Temp Min: 8°C <br> Temp Mes:17°C </h4>
+        </div>
+      </td>
+      
+      <td class="td6 hidden">
+        <div class="InformationHolder">
+          <h3>Dita 31</h3>
+          <h4>Dite me Diell <br> Era Drejt <br> Veriut <br> Fryn me 28 km/h<br> Temp max: 28°C  <br> Temp Min: 19°C <br> Temp Mes:24°C </h4>
+        </div>
+      </td>
+
+      </tbody>
+     </tr>        
+    </table> 
+</div>
+<br>
+<br>
+</body>
+</html>
