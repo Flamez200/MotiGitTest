@@ -103,6 +103,7 @@ body {
     height: 100%;
     background: linear-gradient(to top, #008aff,#00ffe7);
     animation: progressbar 5s linear infinite;
+    z-index: -1;
 }
 
 @keyframes progressbar {
@@ -428,7 +429,7 @@ a:hover span:nth-child(4){
 }
 
 .sun3:hover {
-    transform: scale(1.5) translateX(-65%) translateY(-25%);
+    transform: scale(1.5) translateX(-65%) translateY(-15%);
     transition-duration: 600ms;
 }
 
@@ -445,7 +446,7 @@ a:hover span:nth-child(4){
 }
 
 .sun4:hover {
-    transform: scale(1.5) translateX(65%) translateY(-25%);
+    transform: scale(1.5) translateX(65%) translateY(-15%);
     transition-duration: 600ms;
 }
 
