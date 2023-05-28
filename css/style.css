@@ -347,7 +347,7 @@ a:hover span:nth-child(4){
 }
 
 .cloud1 {
-    content: url(https://raw.githubusercontent.com/Flamez200/MotiGitTest/main/img/cloud.png);
+    content: url(img/cloud.png);
     height: 150px;
     position: relative;
     margin: 0 auto;
@@ -361,7 +361,7 @@ a:hover span:nth-child(4){
 }
 
 .cloud2 {
-    content: url(https://raw.githubusercontent.com/Flamez200/MotiGitTest/main/img/cloud.png);
+    content: url(/img/cloud.png);
     height: 150px;
     position: relative;
     margin: 0 auto;
@@ -375,7 +375,7 @@ a:hover span:nth-child(4){
 }
 
 .cloud3 {
-    content: url(https://raw.githubusercontent.com/Flamez200/MotiGitTest/main/img/cloud.png);
+    content: url(./img/cloud.png);
     height: 150px;
     position: relative;
     margin: 0 auto;
@@ -386,7 +386,7 @@ a:hover span:nth-child(4){
 }
 
 .cloud4 {
-    content: url(https://raw.githubusercontent.com/Flamez200/MotiGitTest/main/img/cloud.png);
+    content: url(../img/cloud.png);
     height: 150px;
     position: relative;
     margin: 0 auto;
