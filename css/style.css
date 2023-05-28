@@ -1,23 +1,5 @@
-html {
-    scrollbar-width: normal;
-    scrollbar-color: rgb(0, 136, 255) rgb(255, 255, 255) ;
-}
-
 html::-webkit-scrollbar {
-    width: 1vw;
-}
-
-html::-webkit-scrollbar-thumb {
-    background-color: rgb(255, 255, 255);
-    border-radius: 4em;
-}
-
-html::-webkit-scrollbar-thumb:hover {
-    background-color: rgba(189, 189, 189, 0.859);
-}
-
-html::-webkit-scrollbar-track {
-    background-color: rgb(0, 136, 255);
+    width: 0;
 }
 
 body {
@@ -104,6 +86,59 @@ body {
     background-color: #eaeaea;
 }
 
+#scrollPath {
+    position:fixed;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 100%;
+    background: rgba(225,225,225,0.05);
+}
+
+#progressbar {
+    position:fixed;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 100%;
+    background: linear-gradient(to top, #008aff,#00ffe7);
+    animation: progressbar 5s linear infinite;
+    z-index: -1;
+}
+
+@keyframes progressbar {
+    0%,100%
+    {
+        filter: hue-rotate(0deg);
+    }
+    50%
+    {
+        filter: hue-rotate(360deg);
+    }
+}
+
+#progressbar::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #008aff,#00ffe7);
+    filter: blur(20px);
+}
+
+#progressbar::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #008aff,#00ffe7);
+    filter: blur(40px);
+}
+
 .Main {
     background-color: rgb(255, 255, 255);
     height: 500px;
@@ -187,7 +222,6 @@ body {
 } 
 
 .InformationHolder:hover {
-    animation: fadeInfo 1.5s;
     transform: scale(1.1);
 }
 
@@ -227,13 +261,15 @@ section {
 a {
     color: rgb(255, 255, 255);
     background: #0066ff;
+    transition: all .25s ease-in-out;
 }
 
 a:hover {
     color: rgb(0, 0, 0);
     background: #ffffff;
     box-shadow: 0 0 40px #ffffff, 0 0 80px #ffffff, 0 0 160px #ffffff;
-    transition-delay: 1s;
+    transition-delay: 0.25s;
+    transform: scale(1.125);
 }
 
 a span {
@@ -251,7 +287,7 @@ a span:nth-child(1){
 
 a:hover span:nth-child(1){
     left: 100%;
-    transition: 1s;
+    transition: 0.25s;
 }
 
 a span:nth-child(2){
@@ -264,8 +300,8 @@ a span:nth-child(2){
 
 a:hover span:nth-child(2){
     top: 100%;
-    transition: 1s;
-    transition-delay: 0.25s;
+    transition: 0.25s;
+    transition-delay: 0.0625s;
 }
 
 a span:nth-child(3){
@@ -278,8 +314,8 @@ a span:nth-child(3){
 
 a:hover span:nth-child(3){
     right: 100%;
-    transition: 1s;
-    transition-delay: 0.5s;
+    transition: 0.25s;
+    transition-delay: 0.125s;
 }
 
 a span:nth-child(4){
@@ -292,8 +328,8 @@ a span:nth-child(4){
 
 a:hover span:nth-child(4){
     bottom: 100%;
-    transition: 1s;
-    transition-delay: 0.75s;
+    transition: 0.25s;
+    transition-delay: 0.25s;
 }
 
 .Memorjet {
@@ -393,7 +429,7 @@ a:hover span:nth-child(4){
 }
 
 .sun3:hover {
-    transform: scale(1.25) translateX(-65%);
+    transform: scale(1.5) translateX(-65%) translateY(-15%);
     transition-duration: 600ms;
 }
 
@@ -410,7 +446,7 @@ a:hover span:nth-child(4){
 }
 
 .sun4:hover {
-    transform: scale(1.25) translateX(65%);
+    transform: scale(1.5) translateX(65%) translateY(-15%);
     transition-duration: 600ms;
 }
 
