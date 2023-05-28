@@ -347,7 +347,7 @@ a:hover span:nth-child(4){
 }
 
 .cloud1 {
-    content: url(img/cloud.png);
+    content: url(../img/cloud.png);
     height: 150px;
     position: relative;
     margin: 0 auto;
@@ -361,7 +361,7 @@ a:hover span:nth-child(4){
 }
 
 .cloud2 {
-    content: url(/img/cloud.png);
+    content: url(../img/cloud.png);
     height: 150px;
     position: relative;
     margin: 0 auto;
@@ -375,7 +375,7 @@ a:hover span:nth-child(4){
 }
 
 .cloud3 {
-    content: url(./img/cloud.png);
+    content: url(../img/cloud.png);
     height: 150px;
     position: relative;
     margin: 0 auto;
@@ -398,7 +398,7 @@ a:hover span:nth-child(4){
 
 .sun1 {
     position: relative;
-    content: url(https://raw.githubusercontent.com/Flamez200/MotiGitTest/main/img/sun.png);
+    content: url(../img/sun.png);
     height: 120px;
     margin: 0 auto;
     right: 500px;
@@ -408,7 +408,7 @@ a:hover span:nth-child(4){
 
 .sun2 {
     position: relative;
-    content: url(https://raw.githubusercontent.com/Flamez200/MotiGitTest/main/img/sun.png);
+    content: url(../img/sun.png);
     height: 120px;
     margin: 0 auto;
     left: 570px;
@@ -417,7 +417,7 @@ a:hover span:nth-child(4){
 }
 
 .sun3 {
-    content: url(https://raw.githubusercontent.com/Flamez200/MotiGitTest/main/img/sun.png);
+    content: url(../img/sun.png);
     height: 120px;
     position: relative;
     margin: 0 auto;
@@ -434,7 +434,7 @@ a:hover span:nth-child(4){
 }
 
 .sun4 {
-    content: url(https://raw.githubusercontent.com/Flamez200/MotiGitTest/main/img/sun.png);
+    content: url(../img/sun.png);
     height: 120px;
     position: relative;
     margin: 0 auto;
